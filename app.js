@@ -25,6 +25,7 @@ app.use(allowCrossDomain);
 connection.init();
 routes.configure(app);
 var server = http.createServer(app);
+
 server.listen(port, function() {
   console.log('Server listening on port ' + server.address().port);
 });

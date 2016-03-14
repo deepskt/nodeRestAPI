@@ -3,7 +3,7 @@ var todo = require('./querymodel');
 module.exports = {
   configure: function(app) {
     app.get('/api/get', function(req,res) {
-      todo.get(req,res);
+      todo.get(req.body,res);
     });
  
     app.post('/api/add', function(req, res) {
